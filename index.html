@@ -1,0 +1,43 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="home-container">
+                <h3 id="home-title">HOME</h3>
+                <div class="score-container" id="home-score-container">
+                    <p class="score" id="homeScore">0</p>
+                </div>
+                <div class="score-btn-container">
+                    <button class="score-btn" onclick="homeAdd1()">+1</button>
+                    <button class="score-btn" onclick="homeAdd2()">+2</button>
+                    <button class="score-btn" onclick="homeAdd3()">+3</button>                                
+                </div>
+            </div>
+            <div id="guest-container">
+                <h3 id="guest-title">GUEST</h3>
+                <div class="score-container" id="guest-score-container">
+                    <p class="score" id="guestScore">0</p>
+                </div>
+                <div class="score-btn-container">
+                    <button class="score-btn" onclick="guestAdd1()">+1</button>
+                    <button class="score-btn" onclick="guestAdd2()">+2</button>
+                    <button class="score-btn" onclick="guestAdd3()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="game-btn-container">
+            <div>
+                <button class="game-btn" id="full-timeout-btn" onclick="fullTimeout()">FULL TIMEOUT</button>
+            </div>
+            <div>
+                <button class="game-btn" id="half-timeout-btn" onclick="halfTimeout()">30 SEC TIMEOUT</button>
+            </div>
+            <div>
+                <button class="game-btn" onclick="newGame()">NEW GAME</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
